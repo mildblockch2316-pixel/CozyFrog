@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CozyFrog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Sarabun","Leelawadee UI",sans-serif;
+    background:#ffffff;
+    color:#2f4a36;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 20px;
+  }
+  .wrap{text-align:center;max-width:420px;width:100%}
+  .logo{width:min(340px,85%);height:auto}
+  .frog{width:96px;height:auto;display:block;margin:20px auto 0;animation:hop 2.6s ease-in-out infinite}
+  @keyframes hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}}
+  .btn{
+    display:inline-block;
+    margin-top:28px;
+    padding:15px 38px;
+    background:#cde563;
+    color:#37774a;
+    font:800 1.15rem "Sarabun",sans-serif;
+    text-decoration:none;
+    border:3px solid #37774a;
+    border-radius:999px;
+    box-shadow:0 5px 0 #37774a;
+    transition:transform .08s, box-shadow .08s;
+  }
+  .btn:hover{transform:translateY(2px);box-shadow:0 3px 0 #37774a}
+  .btn:active{transform:translateY(5px);box-shadow:0 0 0 #37774a}
+  .meta{margin-top:14px;font-size:.9rem;color:#7a8a7e}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="assets/logo.png" alt="CozyFrog">
+    <img class="frog" src="assets/frog.png" alt="">
+    <a class="btn" href="CozyFrog.exe" download>ดาวน์โหลดสำหรับ Windows</a>
+    <p class="meta">Windows 64-bit · 117 MB · Mac เร็วๆ นี้</p>
+  </main>
+</body>
+</html>
